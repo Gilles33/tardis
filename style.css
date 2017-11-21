@@ -1,0 +1,120 @@
+@keyframes closed {
+  25% {
+    transform: rotateZ(0.5deg); }
+  50% {
+    transform: rotateZ(-0.5deg); }
+  75% {
+    transform: rotateZ(0.5deg); }
+  100% {
+    transform: rotateZ(-0.5deg); } }
+.base, .rectangle, .head, .body, .doors, .door, .square, .window, .circle {
+  background-color: #185581;
+  border: 3px solid #103956; }
+
+.rectangle, .head, .body {
+  width: 20%;
+  height: 20px;
+  margin-left: 40%; }
+
+.head {
+  width: 21%;
+  height: auto;
+  min-height: 20px;
+  margin-left: 39.5%; }
+
+.pannel {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding-left: 20%;
+  padding-right: 20%; }
+
+.pannel-text {
+  font-size: 2.3rem; }
+  .pannel-text + .middle {
+    text-align: center;
+    font-size: 0.75rem;
+    margin-left: 5px;
+    margin-right: 5px; }
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 500px; }
+
+.doors {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5px;
+  width: 95%;
+  perspective: 1000px;
+  background-image: url("nebula.jpg");
+  background-size: cover; }
+
+.door {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 490px;
+  width: 50%; }
+
+.open:hover {
+  transition: 2s;
+  transform: rotateY(100deg) translateZ(120px); }
+
+.closed:hover {
+  animation-name: closed;
+  animation-duration: 0.2s; }
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 20%;
+  width: 70%;
+  border: 4px inset #185581;
+  box-shadow: 0px 0px 20px #081c2b inset; }
+
+.window {
+  background-color: antiquewhite;
+  width: 27%;
+  height: 44%; }
+
+.poster {
+  background-color: antiquewhite;
+  text-align: center;
+  font-size: 0.6rem;
+  width: 70%;
+  height: 80%;
+  line-height: 0.1rem; }
+
+.circle {
+  border-radius: 100%;
+  width: 5px;
+  height: 5px;
+  margin: -15px 0 -15px -135px; }
+
+.rotate {
+  perspective: 1000px;
+  margin-top: -10px;
+  margin-bottom: -10px; }
+
+.step {
+  transform: rotateX(75deg);
+  width: 20.3%;
+  margin-left: 39.9%; }
+
+.bottom {
+  width: 20.65%;
+  margin-left: 39.75%; }
+
+/*# sourceMappingURL=style.css.map */
